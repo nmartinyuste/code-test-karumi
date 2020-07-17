@@ -1,5 +1,6 @@
 ---
 name: Pull request
+assignees: nmartinyuste
 ---
 
 # Pull Request Template
