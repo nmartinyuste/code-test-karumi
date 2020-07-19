@@ -1,18 +1,10 @@
 @import '~@angular/material/theming';
 @include mat-core();
 
-$karumi-app-primary: mat-palette($mat-indigo);
-$karumi-app-accent: mat-palette($mat-pink, A200, A100, A400);
-$karumi-app-warn: mat-palette($mat-red);
+$karumi-primary: mat-palette($mat-indigo);
+$karumi-accent: mat-palette($mat-pink, A200, A100, A400);
+$karumi-warn: mat-palette($mat-red);
 
-$karumi-app-theme: mat-light-theme(
-  (
-    color: (
-      primary: $karumi-app-primary,
-      accent: $karumi-app-accent,
-      warn: $karumi-app-warn,
-    ),
-  )
-);
+$karumi-theme: mat-light-theme($karumi-primary, $karumi-primary, $karumi-warn);
 
-@include angular-material-theme($karumi-app-theme);
+@include angular-material-theme($karumi-theme);
