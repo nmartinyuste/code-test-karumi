@@ -1,38 +1,35 @@
 .container {
   &-app {
-    // background-color: map-get($colors, 'soft-main');
-  }
-  &-main {
     overflow: auto;
     margin: 0px auto;
     position: relative;
     flex-grow: 1;
   }
-  &-auth {
+  &-main {
     width: 488px;
     height: 592px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
     box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.08);
-    // background-color: map-get($colors, 'white');
   }
-  &-router {
+  &-auth {
     width: 100%;
   }
 }
 h6 {
   text-align: center;
-  // color: map-get($colors, 'main');
 }
 .container-form {
   width: 100%;
 }
 form {
-  padding-top: 20px;
-  padding-left: 52px;
-  padding-right: 52px;
-  padding-bottom: 80px;
+  padding: 20px 52px;
 }
 
 button {
   align-self: center;
-  margin-top: 55px;
+}
+img {
+  width: 150px;
+  object-fit: contain;
 }

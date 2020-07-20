@@ -1,25 +1,21 @@
-<div class="container-app">
-  <div class="container-main full-height flex__column justify-center align-center">
-    <div class="container-auth flex__column justify-evenly align-center">
-      <!-- <img src="../../../assets/logo_icon.svg" /> -->
-      <div class="container-router flex__column">
-        <div class="container-form">
-          <form class="flex__column justify-start form">
-            <mat-form-field [floatLabel]="'always'">
-              <mat-label>USERNAME</mat-label>
-              <input matInput placeholder="Username" />
-            </mat-form-field>
+<div class="container-app full-height flex__column justify-center align-center">
+  <div class="container-main flex__column justify-evenly align-center">
+    <img src="../../../assets/karumi.png" />
+    <div class="container-auth flex__column">
+      <div class="container-form">
+        <form class="flex__column justify-between form">
+          <mat-form-field [floatLabel]="'always'">
+            <mat-label>USERNAME</mat-label>
+            <input matInput placeholder="Username" />
+          </mat-form-field>
 
-            <mat-form-field [floatLabel]="'always'">
-              <mat-label>PASSWORD</mat-label>
-              <input matInput placeholder="Password" type="password" />
-            </mat-form-field>
+          <mat-form-field [floatLabel]="'always'">
+            <mat-label>PASSWORD</mat-label>
+            <input matInput placeholder="Password" type="password" />
+          </mat-form-field>
 
-            <button type="button" class="flex__row justify-center align-center app-button __fill">
-              <p>LOGIN</p>
-            </button>
-          </form>
-        </div>
+          <button mat-raised-button color="primary">Login</button>
+        </form>
       </div>
     </div>
   </div>
