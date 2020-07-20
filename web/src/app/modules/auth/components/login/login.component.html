@@ -3,18 +3,18 @@
     <img src="../../../assets/karumi.png" />
     <div class="container-auth flex__column">
       <div class="container-form">
-        <form class="flex__column justify-between form">
+        <form class="flex__column justify-between form" [formGroup]="loginForm">
           <mat-form-field [floatLabel]="'always'">
             <mat-label>USERNAME</mat-label>
-            <input matInput placeholder="Username" />
+            <input matInput placeholder="Username" formControlName="username" />
           </mat-form-field>
 
           <mat-form-field [floatLabel]="'always'">
             <mat-label>PASSWORD</mat-label>
-            <input matInput placeholder="Password" type="password" />
+            <input matInput placeholder="Password" type="password" formControlName="password" />
           </mat-form-field>
 
-          <button mat-raised-button color="primary">Login</button>
+          <button mat-raised-button color="primary" [disabled]="loginForm.invalid" (click)="signIn()">Login</button>
         </form>
       </div>
     </div>
