@@ -43,3 +43,7 @@ $karumi-theme: mat-light-theme($karumi-primary, $karumi-primary, $karumi-warn);
 
 @include angular-material-theme($karumi-theme);
 @include mat-button-theme($karumi-theme);
+
+.error-snackbar {
+  background-color: mat-color($karumi-warn);
+}
