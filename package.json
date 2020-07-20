@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "web": "cd web/ && ng serve -c local",
-    "api": "cd api/ && node app.js",
+    "api": "node api/app.js",
     "code-test-karumi": "npm-run-all --parallel web api"
   },
   "repository": {
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/nmartinyuste/code-test-karumi.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "nmartinyuste",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nmartinyuste/code-test-karumi/issues"
@@ -22,5 +22,9 @@
   "homepage": "https://github.com/nmartinyuste/code-test-karumi#readme",
   "devDependencies": {
     "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
   }
 }
