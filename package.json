@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "web": "cd web/ && ng serve -c local",
-    "api": "cd api/ && node index.js",
-    "project": "npm-run-all --parallel web api"
+    "api": "cd api/ && node app.js",
+    "code-test-karumi": "npm-run-all --parallel web api"
   },
   "repository": {
     "type": "git",
