@@ -1,10 +1,45 @@
 @import '~@angular/material/theming';
 @include mat-core();
 
-$karumi-primary: mat-palette($mat-indigo);
+$karumi-main: (
+  50: #e8f0f8,
+  100: #c5daee,
+  200: #9ec2e3,
+  300: #77aad7,
+  400: #5a97cf,
+  500: #3d85c6,
+  600: #377dc0,
+  700: #2f72b9,
+  800: #2768b1,
+  900: #1a55a4,
+  A100: #dae9ff,
+  A200: #a7caff,
+  A400: #74abff,
+  A700: #5b9cff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A500: #000000,
+    A700: #000000,
+  ),
+);
+
+$karumi-primary: mat-palette($karumi-main);
 $karumi-accent: mat-palette($mat-pink, A200, A100, A400);
 $karumi-warn: mat-palette($mat-red);
 
 $karumi-theme: mat-light-theme($karumi-primary, $karumi-primary, $karumi-warn);
 
 @include angular-material-theme($karumi-theme);
+@include mat-button-theme($karumi-theme);
