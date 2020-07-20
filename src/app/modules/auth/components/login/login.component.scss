@@ -1,0 +1,35 @@
+.container {
+  &-app {
+    overflow: auto;
+    margin: 0px auto;
+    position: relative;
+    flex-grow: 1;
+  }
+  &-main {
+    width: 488px;
+    height: 592px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.08);
+  }
+  &-auth {
+    width: 100%;
+  }
+}
+h6 {
+  text-align: center;
+}
+.container-form {
+  width: 100%;
+}
+form {
+  padding: 20px 52px;
+}
+
+button {
+  align-self: center;
+}
+img {
+  width: 150px;
+  object-fit: contain;
+}

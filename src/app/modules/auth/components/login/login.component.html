@@ -1,0 +1,22 @@
+<div class="container-app full-height flex__column justify-center align-center">
+  <div class="container-main flex__column justify-evenly align-center">
+    <img src="../../../assets/karumi.png" />
+    <div class="container-auth flex__column">
+      <div class="container-form">
+        <form class="flex__column justify-between form">
+          <mat-form-field [floatLabel]="'always'">
+            <mat-label>USERNAME</mat-label>
+            <input matInput placeholder="Username" />
+          </mat-form-field>
+
+          <mat-form-field [floatLabel]="'always'">
+            <mat-label>PASSWORD</mat-label>
+            <input matInput placeholder="Password" type="password" />
+          </mat-form-field>
+
+          <button mat-raised-button color="primary">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

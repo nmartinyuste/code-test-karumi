@@ -1,12 +1,5 @@
+//Themes
 @import 'themes/__themes-dir';
 
-/* You can add global styles to this file, and also import other style files */
-
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
-}
+//Base Styles
+@import 'base/__base-dir';

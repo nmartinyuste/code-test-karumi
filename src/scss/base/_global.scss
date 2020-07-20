@@ -1,0 +1,58 @@
+.full-height {
+  height: 100vh;
+  @media only screen and (max-device-width: 640px) {
+    // Make sure it fills the full height minus the search bar (grrr)
+    height: calc(100vh - 56px);
+    height: -o-calc(100vh - 56px); /* opera */
+    height: -webkit-calc(100vh - 56px); /* google, safari */
+    height: -moz-calc(100vh - 56px); /* firefox */
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body,
+p {
+  margin: 0;
+}
+body {
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.flex {
+  &__row {
+    display: flex;
+    flex-direction: row;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.align {
+  &-center {
+    align-items: center;
+  }
+}
+
+.justify {
+  &-evenly {
+    justify-content: space-evenly;
+  }
+  &-start {
+    justify-content: flex-start;
+  }
+  &-center {
+    justify-content: center;
+  }
+}
