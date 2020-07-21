@@ -4,6 +4,9 @@ on:
   push:
     branches-ignore:
       - 'master'
+  pull_request:
+    branches:
+      - master
 
 jobs:
   build_and_test:
@@ -26,10 +29,9 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: dist
-          path: dist
+          path: web/dist
       - name: Archive code coverage result
-        if: success()
         uses: actions/upload-artifact@v1
         with:
           name: coverage
-          path: coverage
+          path: web/coverage
