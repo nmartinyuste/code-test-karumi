@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:ci": "cd web/ && ng test --watch=false --code-coverage --source-map true",
+    "build:ci": "cd web/ && ng build --prod --sourceMap=false --base-href /login-app/",
     "web": "cd web/ && ng serve -c local",
     "api": "node api/app.js",
     "code-test-karumi": "npm-run-all --parallel web api"
