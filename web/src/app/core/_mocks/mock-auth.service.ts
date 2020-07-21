@@ -20,4 +20,6 @@ export class MockAuthService {
   setUser(user: User) {
     this.user = user;
   }
+
+  logout() {}
 }
