@@ -1,5 +1,11 @@
 # CodeTestKarumi
 
+## Configure Project
+
+1. Clone repository `git clone https://github.com/nmartinyuste/code-test-karumi.git`
+2. Enter `cd code-test-karumi`
+3. Run `npm ci`
+
 ## Local Server
 
 Run `npm run code-test-karumi` to run whole project. Navigate to `http://localhost:4200/`.
