@@ -18,12 +18,16 @@ export class AuthService {
     return this.currentUserSubject.value;
   }
 
+  public setUser(user: User) {
+    localStorage.setItem('currentUser', JSON.stringify(user));
+    this.currentUserSubject.next(user);
+  }
+
   public login({ username, password }: { username: string; password: string }) {
     return this.api.post(`/auth/login`, { username, password }).pipe(
       map((user: User) => {
         if (user) {
-          localStorage.setItem('currentUser', JSON.stringify(user));
-          this.currentUserSubject.next(user);
+          this.setUser(user);
         }
         return user;
       })

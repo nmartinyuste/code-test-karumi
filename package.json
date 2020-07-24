@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test:ci-headless": "cd web/ && ng test --watch=false --browsers=ChromeHeadless --code-coverage --source-map true",
     "test:ci": "cd web/ && ng test --watch=false --code-coverage --source-map true",
     "build:ci": "cd web/ && ng build --prod --sourceMap=false --base-href /login-app/",
     "web": "cd web/ && ng serve -c local",
