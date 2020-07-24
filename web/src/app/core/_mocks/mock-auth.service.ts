@@ -22,4 +22,12 @@ export class MockAuthService {
   }
 
   logout() {}
+
+  login({ username, password }: { username: string; password: string }) {
+    if (username === user.username && password === user.password) {
+      return this.user;
+    } else {
+      throw new Error();
+    }
+  }
 }

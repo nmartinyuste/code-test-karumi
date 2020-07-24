@@ -20,10 +20,6 @@ describe('AuthService', () => {
     expect(authService).toBeTruthy();
   });
 
-  it('current user should start null', () => {
-    expect(authService.currentUserValue).toBeNull();
-  });
-
   it('login success', () => {
     authService.login({ username: 'user1', password: 'password1' }).subscribe((user) => {
       expect(user).toEqual(success);

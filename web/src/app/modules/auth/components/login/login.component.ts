@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     fromEvent(document, 'keydown')
       .pipe(takeUntil(this.destroy$))
       .subscribe((key: KeyboardEvent) => {
-        if (key?.keyCode === 13) {
+        if (key?.key === 'Enter') {
           this.signIn();
         }
       });

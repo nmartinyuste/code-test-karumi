@@ -34,8 +34,6 @@ describe('HomeComponent', () => {
   });
 
   it('should navigate to /auth/login', () => {
-    // const link = fixture.debugElement.nativeElement.querySelector('.logout-link');
-    // link.click();
     component.logout();
     expect(router.navigate).toHaveBeenCalledWith(['auth/login']);
   });
